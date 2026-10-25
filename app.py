@@ -14,7 +14,7 @@ st.markdown("---")
 # Cargar datos
 @st.cache_data
 def load_data():
-    df = pd.read_excel("Dengue_2024_Maestro_Corregido.xlsx")
+    df = pd.read_excel("Dengue_Maestro_Procesado.xlsx")
     df['ds'] = pd.to_datetime('2024-01-01') + pd.to_timedelta((df['Semana'] - 1) * 7, unit='d')
     df['y'] = df['Casos_Nuevos']
     return df
