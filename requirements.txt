@@ -1,5 +1,6 @@
-streamlit
-pandas
-plotly
-prophet
-openpyx
+streamlit==1.36.0
+pandas==2.2.2
+numpy==1.26.4
+prophet==1.1.5
+plotly==5.22.0
+openpyxl==3.1.2
